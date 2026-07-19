@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Детский Правозащитный Корпус — Магомедов Мурад Магомедэминович</title>
 
-    <style>
+    <style> nav {
+    background: #1f3c5b;
+    padding: 15px;
+}
+
+nav button {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav div {
+    display: none;
+}
+
+nav div.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -82,6 +108,15 @@
 </head>
 
 <body>
+    <nav>
+<button onclick="document.querySelector('nav div').classList.toggle('open')">☰</button>
+<div>
+<a href="#проект">О проекте</a>
+<a href="#работа">Как мы работаем</a>
+<a href="#рекомендации">Рекомендации</a>
+<a href="#контакты">Контакты</a>
+</div>
+</nav>
 
 <header>
     <h1>Детский Правозащитный Корпус (ДПК)</h1>
