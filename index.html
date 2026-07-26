@@ -1,279 +1,382 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta name="yandex-verification" content="92c4768094bbb2e4" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Детский Правозащитный Корпус — Магомедов Мурад Магомедэминович</title>
+<title>Детский Правозащитный Корпус (ДПК)</title>
 
-    <style> nav {
-    background: #1f3c5b;
-    padding: 15px;
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
-nav button {
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
+body{
+background:#eef4fb;
+color:#222;
+line-height:1.7;
 }
 
-nav div {
-    display: none;
+header{
+
+background:linear-gradient(135deg,#0b2f57,#184d8a);
+
+color:#fff;
+
+padding:45px 20px;
+
+text-align:center;
+
+box-shadow:0 6px 15px rgba(0,0,0,.25);
+
 }
 
-nav div.open {
-    display: block;
+.logo{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+background:#fff;
+
+padding:10px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+box-shadow:0 0 20px rgba(255,255,255,.25);
+
 }
 
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+.logo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:contain;
+
 }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f6f8;
-            color: #222;
-            line-height: 1.6;
-        }
 
-        header {
-            background: #1f3c5b;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
+h1{
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+font-size:38px;
 
-        header p {
-            font-size: 18px;
-        }
+margin-bottom:12px;
 
-        .leader {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.35);
-            font-size: 18px;
-        }
+}
 
-        .leader strong {
-            display: block;
-            margin-top: 8px;
-            font-size: 24px;
-            letter-spacing: 0.5px;
-        }
+.subtitle{
 
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+font-size:20px;
 
-        section {
-            background: white;
-            margin-bottom: 25px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+opacity:.95;
 
-        h2 {
-            color: #1f3c5b;
-        }
+margin-bottom:25px;
 
-        li {
-            margin-bottom: 10px;
-        }
+}
 
-        .contacts a {
-            color: #1f3c5b;
-            font-weight: bold;
-        }
+.motto{
 
-        footer {
-            text-align: center;
-            background: #1f3c5b;
-            color: white;
-            padding: 25px;
-            margin-top: 40px;
-        }
-    </style>
+display:inline-block;
+
+background:#ffffff22;
+
+padding:14px 22px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+font-size:18px;
+
+}
+
+main{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:22px;
+
+margin-bottom:30px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+color:#123d72;
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+.hero{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-text{
+
+flex:1;
+
+min-width:300px;
+
+}
+
+.hero-image{
+
+flex:1;
+
+min-width:280px;
+
+text-align:center;
+
+font-size:140px;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+
+margin-top:25px;
+
+}
+
+.box{
+
+background:#f4f8fd;
+
+padding:22px;
+
+border-radius:18px;
+
+border-left:6px solid #184d8a;
+
+}
+
+.box h3{
+
+margin-bottom:10px;
+
+color:#123d72;
+
+}
+
+footer{
+
+background:#0b2f57;
+
+color:#fff;
+
+text-align:center;
+
+padding:30px;
+
+margin-top:40px;
+
+}
+
+.contact{
+
+font-size:18px;
+
+margin:8px 0;
+
+}
+
+@media(max-width:700px){
+
+h1{
+
+font-size:30px;
+
+}
+
+.hero-image{
+
+font-size:90px;
+
+}
+
+}
+
+</style>
 </head>
 
 <body>
-    <nav>
-<button onclick="document.querySelector('nav div').classList.toggle('open')">☰</button>
-<div>
-<a href="about.html">О проекте</a>
-<a href="#работа">Как мы работаем</a>
-<a href="#статьи">Статьи</a> 
-<a href="#рекомендации">Рекомендации</a>
-<a href="#контакты">Контакты</a>
-</div>
-</nav>
 
 <header>
-    <h1>Детский Правозащитный Корпус (ДПК)</h1>
 
-    <p>Официальный сайт общественного правозащитного проекта</p>
+<div class="logo">
 
-    <div class="leader">
-        Руководитель проекта
-        <strong>Магомедов Мурад Магомедэминович</strong>
-    </div>
+<img src="ДПК.png" alt="Логотип ДПК">
+
+</div>
+
+<h1>🛡 Детский Правозащитный Корпус (ДПК)</h1>
+
+<div class="subtitle">
+
+Официальный сайт общественного правозащитного проекта
+
+</div>
+
+ <div style="margin-top:18px;font-size:18px;color:#ffffff;">   
+<b>Руководитель проекта:</b><br>
+Магомедов Мурад Магомедэминович
+</div>
+<div class="motto">
+
+«Защита прав ребёнка — ответственность всего общества»
+
+</div>
+
 </header>
 
 <main>
+ <div class="card hero">
 
-<section>
-    <h2>О проекте</h2>
+    <div class="hero-text">
 
-    <p>
-        <strong>Детский Правозащитный Корпус (ДПК)</strong> — независимый общественный
-        правозащитный проект, созданный для содействия защите прав, свобод и законных
-        интересов несовершеннолетних.
+        <h2>Добро пожаловать!</h2>
+
+        <p>
+            Детский Правозащитный Корпус (ДПК) — общественный правозащитный проект,
+            созданный для содействия защите прав и законных интересов детей.
+        </p>
+
+        <p style="margin-top:15px;">
+            Мы оказываем информационную поддержку гражданам, помогаем ориентироваться
+            в сложных жизненных ситуациях и содействуем привлечению внимания
+            к возможным нарушениям прав ребёнка.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+        🛡🤝
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>Наши принципы</h2>
+
+    <div class="info-grid">
+
+        <div class="box">
+            <h3>🛡 Защита</h3>
+            <p>Содействуем защите прав и законных интересов детей.</p>
+        </div>
+
+        <div class="box">
+            <h3>🤝 Поддержка</h3>
+            <p>Помогаем людям разобраться в сложных жизненных ситуациях и выбрать правильный порядок действий.</p>
+        </div>
+
+        <div class="box">
+            <h3>⚖️ Законность</h3>
+            <p>Работаем исключительно в рамках законодательства Российской Федерации.</p>
+        </div>
+
+        <div class="box">
+            <h3>❤️ Забота</h3>
+            <p>Каждый ребёнок имеет право на безопасность, уважение и достойную жизнь.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>Связаться с нами</h2>
+
+    <p class="contact">
+        📞 <strong>+7 (966) 100-24-73</strong>
     </p>
 
-    <p>
-        Главная цель проекта — помогать детям и их законным представителям в случаях
-        возможного нарушения прав ребенка, жестокого обращения, семейного неблагополучия,
-        бездействия должностных лиц и иных ситуаций, требующих общественного внимания
-        и правовой оценки.
+    <p class="contact">
+        ✉️ <strong>dpk_help@my.com</strong>
     </p>
 
-    <p>
-        Мы убеждены, что каждый ребенок имеет право на безопасность, уважение, защиту
-        и достойные условия жизни.
-    </p>
-</section>
-
-<section>
-    <h2>Чем занимается ДПК</h2>
-
-    <p>В рамках действующего законодательства Российской Федерации мы оказываем общественное содействие гражданам и помогаем:</p>
-
-    <ul>
-        <li>подготовить обращения, заявления и жалобы в компетентные государственные органы;</li>
-        <li>разъяснить порядок защиты прав ребенка и возможные дальнейшие действия;</li>
-        <li>привлечь внимание общественности к случаям, представляющим значительный общественный интерес;</li>
-        <li>содействовать взаимодействию со средствами массовой информации, журналистами и общественными деятелями;</li>
-        <li>направлять обращения в компетентные органы при наличии информации о возможном нарушении прав несовершеннолетних;</li>
-        <li>оказывать информационное содействие гражданам при подготовке документов и взаимодействии с государственными органами.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Как мы работаем</h2>
-
-    <p>Любой человек может обратиться в ДПК, если ему стало известно о возможном нарушении прав ребенка.</p>
-
-    <p>После получения обращения мы:</p>
-
-    <ul>
-        <li>изучаем предоставленную информацию;</li>
-        <li>анализируем представленные материалы;</li>
-        <li>при необходимости помогаем подготовить обращения;</li>
-        <li>рекомендуем возможный порядок дальнейших действий;</li>
-        <li>при наличии оснований содействуем привлечению внимания компетентных органов и общественности.</li>
-    </ul>
-
-    <p><strong>Каждое обращение рассматривается индивидуально.</strong></p>
-</section>
-
-<section>
-    <h2>Важно</h2>
-
-    <p>
-        ДПК является <strong>общественным правозащитным проектом</strong>, а не государственным
-        органом, правоохранительным органом, адвокатским образованием или некоммерческой организацией.
+    <p class="contact">
+        🤖 Telegram-бот:
+        <a href="https://t.me/dpkhelp_bot" target="_blank">
+            @dpkhelp_bot
+        </a>
     </p>
 
-    <p>
-        Проект не заменяет деятельность полиции, Следственного комитета, прокуратуры,
-        органов опеки, суда и иных государственных органов, а оказывает гражданам
-        общественное и информационное содействие в защите прав несовершеннолетних.
+</div>
+
+<div class="card">
+
+    <h2>❤️ Наш девиз</h2>
+
+    <p style="font-size:20px;text-align:center;font-weight:bold;color:#123d72;">
+
+        «Защита прав ребёнка — ответственность всего общества.»
+
     </p>
 
-    <p>
-        Если ребенку угрожает непосредственная опасность, необходимо незамедлительно
-        обратиться по телефону <strong>112</strong>.
-    </p>
-</section>
+</div>
+<div class="card">
 
-<section class="contacts">
-    <h2>Контакты</h2>
+<h2>❤️ Наш девиз</h2>
 
-    <p>
-        <strong>Телефон / WhatsApp:</strong>
-        <a href="tel:+79661002473">+7 (966) 100-24-73</a>
-    </p>
+<p style="font-size:20px;text-align:center;font-weight:bold;color:#123d72;">
 
-    <p>
-        <strong>Электронная почта:</strong>
-        <a href="mailto:dpk_help@my.com">dpk_help@my.com</a>
-    </p>
+«Каждый ребёнок имеет право жить в безопасности, быть услышанным и знать, что рядом есть взрослые, готовые защитить его права.»
 
-    <p>
-        <strong>Telegram-бот для обращений:</strong>
-        <a href="https://t.me/dpkhelp_bot" target="_blank">@dpkhelp_bot</a>
-    </p>
-</section>
+</p>
 
-<section>
-    <h2>Наша миссия</h2>
-
-    <p>
-        Мы стремимся к тому, чтобы ни один случай возможного нарушения прав ребенка
-        не оставался без внимания.
-    </p>
-
-    <p>
-        ДПК создан как общественная инициатива неравнодушных людей, готовых помогать
-        в рамках закона, содействовать защите несовершеннолетних и добиваться того,
-        чтобы каждое обращение было услышано компетентными органами.
-    </p>
-
-    <p>
-        <strong>Защита прав ребенка — это ответственность всего общества.</strong>
-    </p>
-</section>
-
-    </section>
-
-<section>
-    <h2>Что делать, если ребёнку угрожает опасность?</h2>
-
-    <p>
-        Если вы стали свидетелем возможного насилия над ребёнком
-        или слышите крики о помощи, не оставайтесь равнодушными.
-    </p>
-
-    <p>
-        При непосредственной угрозе жизни или здоровью ребёнка
-        незамедлительно звоните по номеру 112.
-    </p>
-
-    <p>
-        По возможности запомните адрес и обстоятельства происшествия.
-        Не подвергайте опасности себя и ребёнка.
-    </p>
-</section>
-
-</main>
+</div>
 </main>
 
 <footer>
-    © Детский Правозащитный Корпус (ДПК)
+
+© 2026 Детский Правозащитный Корпус (ДПК)
+
 </footer>
 
 </body>
+
 </html>
